@@ -17,14 +17,14 @@ public:
 };
 
 int main() {
-    vector<int> a = {1, 2, 2, 2, 3, 4, 4, 4, 5, 6, 7};  
+    vector<int> arr = {1, 2, 2, 2, 3, 4, 4, 4, 5, 6, 7};  
     Solution sol;
-    int k = sol.removeDuplicates(a);
+    int k = sol.removeDuplicates(arr);
 
     cout << "Number of unique elements: " << k << endl;
     cout << "Updated array: ";
     for (int i = 0; i < k; i++) {
-        cout << a[i] << " ";
+        cout << arr[i] << " ";
     }
     cout << endl;
 
