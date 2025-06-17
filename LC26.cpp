@@ -5,14 +5,14 @@ class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
         int n = nums.size();
-        int ind = 1;
+        int indx = 1;
         for (int i = 1; i < n; i++) {
             if (nums[i] != nums[i - 1]) {
-                nums[ind] = nums[i];
-                ind++;
+                nums[indx] = nums[i];
+                indx++;
             }
         }
-            return ind;
+            return indx;
     }
 };
 
